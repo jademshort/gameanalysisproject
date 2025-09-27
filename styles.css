@@ -1,0 +1,151 @@
+footer.site-footer {
+	color: #e6cfa7;
+	text-align: center;
+}
+#extras.section-element::before, #extras.section-element *::before {
+	display: none !important;
+}
+#extras.section-element, #extras.section-element * {
+	background: #6d4a8a !important; /* Light purple */
+	box-shadow: none !important;
+	border: none !important;
+	color: #e6cfa7 !important;
+	background-image: none !important;
+}
+#cover {
+	min-height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding-top: 2vh;
+	padding-bottom: 14vh;
+	margin-bottom: 10vh;
+}
+
+#cover-title {
+	font-size: 3rem;
+	margin-bottom: 1.5rem;
+	color: #e6cfa7;
+	text-shadow: 0 0 12px #bfa76a88, 0 2px 8px #2d003688;
+}
+
+.cover-sub {
+	font-size: 1.5rem;
+	margin-bottom: 0;
+	color: #e6cfa7;
+	text-shadow: 0 0 8px #bfa76a66, 0 1px 4px #2d003644;
+}
+#cover::before, #cover .cover-inner::before {
+	display: none !important;
+}
+/* Remove parchment background from cover section */
+#cover, #cover .cover-inner {
+	background: none !important;
+	box-shadow: none !important;
+	border: none !important;
+	max-width: none;
+	position: static;
+	overflow: visible;
+}
+/* Fantasy Navigation Bar */
+.site-header {
+	background: #2d0036;
+	box-shadow: 0 2px 12px #0008;
+	padding: 0;
+	margin-bottom: 2rem;
+}
+
+.main-nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5rem 0;
+}
+
+.nav-list {
+	display: flex;
+	gap: 2rem;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-list li {
+	margin: 0;
+}
+
+.nav-list a {
+	font-family: 'Cinzel Decorative', serif;
+	color: #e6cfa7;
+	font-size: 1.1rem;
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+	border-radius: 8px;
+	transition: background 0.2s, color 0.2s;
+}
+
+.nav-list a:hover, .nav-list a:focus {
+	background: #e6cfa7;
+	color: #2d0036;
+	outline: none;
+}
+/* Fantasy Baldur's Gate 3 / D&D Aesthetic Styles */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=EB+Garamond:wght@400;700&display=swap');
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(135deg, #2d0036 0%, #3a1a4d 100%);
+	font-family: 'EB Garamond', serif;
+	color: #2d1b07;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Cinzel Decorative', serif;
+	color: #2d1b07;
+	letter-spacing: 1px;
+	text-shadow: none;
+}
+
+/* Parchment section backgrounds */
+section, .parchment-box {
+	background: #f5e6c5;
+	border-radius: 18px;
+	box-shadow: 0 0 0 8px #e0c48c, 0 4px 32px 0 #00000055;
+	border: 2px solid #bfa76a;
+	padding: 2rem;
+	margin: 2rem auto;
+	max-width: 900px;
+	color: #2d1b07;
+	position: relative;
+	overflow: hidden;
+	/* Subtle paper texture overlay */
+	background-image: url('https://www.transparenttextures.com/patterns/old-mathematics.png');
+	background-blend-mode: multiply;
+}
+
+section::before, .parchment-box::before {
+	content: '';
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	pointer-events: none;
+	border-radius: 18px;
+	box-shadow: 0 0 60px 20px #a98c5e inset;
+}
+
+a {
+	color: #7c4dff;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #e6cfa7;
+	background: #2d0036;
+	border-radius: 4px;
+	transition: 0.2s;
+}
+
